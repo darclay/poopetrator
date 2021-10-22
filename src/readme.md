@@ -1,11 +1,23 @@
+-----------------APPLICATION TITLE--------------------------------
+
+Title: Poopetrator
+
+----------------APPLICATION DESCRIPTION---------------------------
+
+Description: This app gives the user the ability to document stray dog poop in their area.  
+If the user finds a stray (unocompanied) poop, they can open the app, and upload desciptors to an API.
+The users upload is rendered and can be viewed by them or others, via the API.
+If the stray poop is no longer in the area that it is said to be, then the user can delete the post.
+The application will have a map function, which shows the user the posts via pins on a map.  
+
 This application uses the following tools:
   1. React Programming Language
   2. React Router
   3. Has six rendering components
   4. The file structure is organized in the components file.
-  5. Axios as a get method for an API
+  5. Axios is used as a get method for an API
   6. Airtable is used for the API.
-  7. Deployed via Netify
+  7. This is deployed via Netify
 
 This application has the following components:
   1.  A HOME page which includes:
@@ -51,5 +63,24 @@ This application has the following components:
       c. emoji pins on that map
       d. clickable links on the emojis to the photo
 
+----------------------API INFORMATION------------------------------
 
-https://github.com/darclay/poopetrator
+API LINK: "#"
+
+-------------------------WIREFRAME---------------------------------
+
+LINK: "https://whimsical.com/poopetrator-NXU33zWqsAxb6zUpWA78NB"
+
+-----------------MVP (MINIMUM VIABLE PRODUCT)----------------------
+  
+  1. Uses six React Components
+  2. Uses React with Router/Link functionality
+  3. Uses Axios to get data.
+  4. Uses Airtable as a custom API
+  5. Is styled in CSS, CSS-in-JS, Flexbox and media query for Desktop & Mobile
+  6. Deployed via Netlify
+
+
+------------------------OTHER LINKS--------------------------------
+
+GITHUB LINK: "https://github.com/darclay/poopetrator"
