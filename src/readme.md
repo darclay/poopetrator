@@ -82,11 +82,20 @@ LINK: "https://whimsical.com/poopetrator-NXU33zWqsAxb6zUpWA78NB"
 
 --------------------------TIMELINE---------------------------------
 
-                  | PRIORITY | ESTIMATED | ACTUAL |
-WIREFRAME      
-PSEUDO CODE       | HIGH   |   
-SET UP REACT
-FETCH API
+                  | PRIORITY  | ESTIMATED | ACTUAL  |
+                  |           |    TIME   |  TIME   |
+-----------------------------------------------------
+WIREFRAME & PLAN  |   HIGH    |    4HR    |   6HR   |
+PSEUDO CODE       |   HIGH    |    1HR    |         |  
+SET UP REACT      |   ----    |   ----    |  ----   |
+^COMPONENTS       |   HIGH    |    4HR    |         |
+BUILDING API      |   HIGH    |    4HR    |         |
+FETCH API & CODE  |   HIGH    |    4HR    |         |
+PICTURE UPLOAD    |  MEDIUM   |   10HR    |         |
+MAPPING           |  MEDIUM   |   10HR    |         |       
+STYLING           |  MEDIUM   |   10HR    |         |
+=====================================================
+
 
 
 ------------------------OTHER LINKS--------------------------------
