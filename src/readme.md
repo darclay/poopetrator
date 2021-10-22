@@ -80,6 +80,14 @@ LINK: "https://whimsical.com/poopetrator-NXU33zWqsAxb6zUpWA78NB"
   5. Is styled in CSS, CSS-in-JS, Flexbox and media query for Desktop & Mobile
   6. Deployed via Netlify
 
+--------------------------TIMELINE---------------------------------
+
+                  | PRIORITY | ESTIMATED | ACTUAL |
+WIREFRAME      
+PSEUDO CODE       | HIGH   |   
+SET UP REACT
+FETCH API
+
 
 ------------------------OTHER LINKS--------------------------------
 
