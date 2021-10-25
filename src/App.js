@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link, Route } from "react-router-dom";
+import Newplop from "./components/Newplop.jsx";
+import Plops from "./components/Plops.jsx";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    
+    
+    <div>
+     <h1>POOPETRATOR</h1>
+     
+     <Route path="/"  exact>
+     <h4>Find, Pin, & Document Dog Poo in Your Neighborhood.
+       <br/>
+       Do you know whose krinkle cutter caused the mess?
+       <br/>
+       This is the best place to name the Poopetrator.
+        </h4>
+      
+      <button id="newPlop"></button>
+      <button id="plops"></button>
+      <button id="mapit"></button>
+      <button id="feelingCheeky"></button>
+    </Route>
+
+    <Route path="/newplop">
+    <Newplop/>
+    </Route>
+
+
     </div>
   );
 }
