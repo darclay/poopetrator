@@ -65,7 +65,7 @@ This application has the following components:
 
 ----------------------API INFORMATION------------------------------
 
-API LINK: "#"
+API LINK: "https://airtable.com/appAT4ne9vTP46u1M/tblrqVAJPFQfTY2wT/viwxIGa1bNCITkChK?blocks=bipPRkTFY4Sye1H5O"
 
 -------------------------WIREFRAME---------------------------------
 
@@ -86,7 +86,7 @@ LINK: "https://whimsical.com/poopetrator-NXU33zWqsAxb6zUpWA78NB"
                   |           |    TIME   |  TIME   |
 -----------------------------------------------------
 WIREFRAME & PLAN  |   HIGH    |    4HR    |   6HR   |
-PSEUDO CODE       |   HIGH    |    1HR    |         |  
+PSEUDO CODE       |   HIGH    |    1HR    |   1HR   |  
 SET UP REACT      |   ----    |   ----    |  ----   |
 ^COMPONENTS       |   HIGH    |    4HR    |         |
 BUILDING API      |   HIGH    |    4HR    |         |
