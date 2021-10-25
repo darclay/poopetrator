@@ -7,7 +7,7 @@ const Plops = () => {
   
     return (
       <div>
-        <h2>Hello</h2>
+        <h2>Plops</h2>
       </div>
     );
 
