@@ -4,9 +4,6 @@ import Plops from "./components/Plops.jsx";
 import Mapit from "./components/Mapit.jsx";
 import FeelingCheeky from "./components/FeelingCheeky.jsx";
 
-
-
-
 const App = () => {
   return (
     
