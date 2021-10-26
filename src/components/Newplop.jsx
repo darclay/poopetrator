@@ -9,11 +9,11 @@ const Newplop = () => {
   const [ Title, setTitle ] = useState('');
   const [ Poopetrator, setPoopetrator ] = useState('');
   const [ Location, setLocation ] = useState('');
-  const [ MapApp, setMapApp ] = useState('');
+  // const [ MapApp, setMapApp ] = useState('');
   const [ Color, setColor ] = useState('');
   const [ Size, setSize ] = useState('');
   const [ Consistency, setConsistency ] = useState('');
-  const [ Picupload, setPicupload ] = useState('');
+  // const [ Picupload, setPicupload ] = useState('');
 
   const [ toggleFetch, setToggleFetch ] = useState(false);
   
@@ -26,11 +26,11 @@ const Newplop = () => {
           Title,
           Poopetrator,
           Location,
-          MapApp,
+          // MapApp,
           Color,
           Size,
           Consistency,
-          // Picupload,
+          Picupload,
         }
        }]
       }
@@ -65,8 +65,8 @@ const Newplop = () => {
       <label htmlFor="consistency"></label>
       <input type="text" id="consistency" placeholder="CONSISTENCY" onChange={(ev) => setConsistency(ev.target.value)}/>
       <br/>
-      {/* <label htmlFor="picupload"></label>
-      <input type="text" id="picupload" placeholder="UPLOAD / TAKE A PIC" onChange={(ev) => setPicupload(ev.target.value)}/> */}
+      <label htmlFor="picupload"></label>
+      <input type="file" id="picupload" placeholder="UPLOAD / TAKE A PIC" onChange={(ev) => setPicupload(ev.target.value)}/>
       <input type="submit" />   
     </form>
 

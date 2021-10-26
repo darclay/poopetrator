@@ -12,6 +12,7 @@ const Plops = () => {
     const getData = async () => {
       const response = await axios.get(`${API_URL}${API_KEY}`);
       setPlopPosts(response.data.records);
+      // console.log(response.data.records);
     }
     getData();
   }, []);
@@ -55,7 +56,7 @@ const Plops = () => {
             <br/>
             {aplop.fields.Consistency} 
             <br/>
-            {/* <img src={aplop.fields.PicUpload[0].thumbnails.large.url} alt="dog poop"></img> */}
+          {aplop.fields.PicUpload ? <img src={aplop.fields.PicUpload[0].thumbnails.large.url} alt="dog poop"></img> : null}
           </h4>
         ))}
 
