@@ -7,30 +7,30 @@ const API_URL = "https://api.airtable.com/v0/appAT4ne9vTP46u1M/Table%201?api_key
 
 
 const FeelingCheeky = () => {
-  const [ plopPosts, setPlopPosts ] = useState([]); 
+  const [ plopPosts, setPlopPosts ] = useState(); 
  
-  
-  useEffect(() => {
+    useEffect(() => {
     const getData = async () => {
       const response = await axios.get(`${API_URL}${API_KEY}`);
       const results = response.data.records;
-      console.log(results);
       const randIndex = Math.floor(Math.random() * results.length);
       setPlopPosts(results[randIndex]);
-      console.log(typeof plopPosts);
-    // -------------------------------------------
-      const photoDis = plopPosts.fields.PicUpload[0].thumbnails.large.url;
+      
+      
+     
+    // ---------WHEN PHOTO NOT REQUIRED------------
+      // const photoDis = plopPosts.fields.PicUpload[0].thumbnails.large.url;
     
-      if (photoDis) {
-      console.log(plopPosts.fields.PicUpload[0].thumbnails.large.url);
-      }else {
-      console.log("no pic available");
-      }
-    
-    
+      // if (photoDis) {
+      // console.log(plopPosts.fields.PicUpload[0].thumbnails.large.url);
+      // }else {
+      // console.log("no pic available");
+      // }
+    //---------------------------------------------
     }
     getData();
-  }, []);
+  },[]);
+
 
   return (
     <div>
@@ -38,7 +38,8 @@ const FeelingCheeky = () => {
         <h2>BACK TO HOME</h2>
         </Link>
       <h2>Feeling Cheeky</h2>
-      {/* <img src={plopPosts.fields.PicUpload[0].thumbnails.large.url} alt="dog poop"></img> */}
+      {plopPosts ? <img src={plopPosts.fields.PicUpload[0].thumbnails.large.url} alt="dog poop"></img> : null}
+      
 
      
       
