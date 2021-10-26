@@ -30,7 +30,7 @@ const Newplop = () => {
           Color,
           Size,
           Consistency,
-          Picupload,
+          // Picupload,
         }
        }]
       }
@@ -66,7 +66,7 @@ const Newplop = () => {
       <input type="text" id="consistency" placeholder="CONSISTENCY" onChange={(ev) => setConsistency(ev.target.value)}/>
       <br/>
       <label htmlFor="picupload"></label>
-      <input type="file" id="picupload" placeholder="UPLOAD / TAKE A PIC" onChange={(ev) => setPicupload(ev.target.value)}/>
+      {/* <input type="file" id="picupload" placeholder="UPLOAD / TAKE A PIC" onChange={(ev) => setPicupload(ev.target.value)}/> */}
       <input type="submit" />   
     </form>
 
