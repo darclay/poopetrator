@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import PlopPhoto from "./PlopPhoto.jsx";
+import PlopPhoto from "./PlopPhoto";
 
 
 const API_URL = `https://api.airtable.com/v0/appAT4ne9vTP46u1M/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
@@ -9,14 +9,16 @@ const API_URL = `https://api.airtable.com/v0/appAT4ne9vTP46u1M/Table%201?api_key
 const Plops = () => {
   const [ plopPosts, setPlopPosts ] = useState([]); 
   
+  
   useEffect(() => {
     const getData = async () => {
       const response = await axios.get(`${API_URL}`);
-      setPlopPosts(response.data.records);
+      setPlopPosts(response.data.records);  
+      console.log(response.data.records);    
     }
     getData();
   }, []);
-
+ 
 
   
     return (
@@ -25,11 +27,12 @@ const Plops = () => {
         <h2>BACK TO HOME</h2>
         </Link>
         <h3>Plops</h3>
-        {plopPosts.map((aplop) => (
-          <Link to={`/plop-photo/${aplop.id}`}>
+        {plopPosts.map((aplop, idx) => (
           <h4 
-          key={aplop.id}>
+          key={idx}>
+            <Link to={`./plop-photo/${aplop.id}`}>
             Title: 
+            </Link>
             <br/>
             {aplop.fields.Title}
             <br/>
@@ -59,14 +62,11 @@ const Plops = () => {
             <br/>
             {aplop.fields.PicUpload ? <img src={aplop.fields.PicUpload} alt="dog poop"></img> : null}
           </h4>
-          </Link>
         ))}
-      
       <PlopPhoto 
       plopPosts={plopPosts}
       />
-
-      </div>
+       </div>
     );
 
 }

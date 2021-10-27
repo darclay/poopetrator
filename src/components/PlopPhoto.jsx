@@ -1,13 +1,15 @@
-import { useParams } from "react-router-dom";
-import Plops from "./Plops.jsx";
+// import { useParams } from "react-router-dom";
 
-const PlopPhoto = ({ plopPosts }) => {
 
+const PlopPhoto = (props) => {
+  // const params = useParams();
+  // const plopId = plopPosts.find((plop) => plop.id === params.id);
   
+
   return (
     <div>
       <h2>Photo</h2>
-      <p>{plopPosts.fields.Title}</p>
+      {/* <p>{props.fields.Title}</p> */}
     </div>
   )
 }
