@@ -3,6 +3,8 @@ import Newplop from "./components/Newplop.jsx";
 import Plops from "./components/Plops.jsx";
 import About from "./components/About.jsx";
 import FeelingCheeky from "./components/FeelingCheeky.jsx";
+import PlopPhoto from "./components/PlopPhoto.jsx";
+
 
 const App = () => {
   return (
@@ -43,6 +45,10 @@ const App = () => {
 
     <Route path="/plops">
     <Plops/>
+    </Route>
+
+    <Route path="/plop-photo/:id">
+    <PlopPhoto/>
     </Route>
 
     <Route path="/about">

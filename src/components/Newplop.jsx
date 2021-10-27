@@ -65,7 +65,7 @@ const Newplop = () => {
       <label htmlFor="consistency"></label>
       <input type="text" id="consistency" placeholder="CONSISTENCY" onChange={(ev) => setConsistency(ev.target.value)}/>
       <br/>
-      <label htmlFor="picupload"></label>
+      <label htmlFor="picupload">You must enter the direct link from IMGUR (...i.imgur.com...)</label><br/>
       <input type="text" id="picupload" placeholder="PIC-POST IMGUR URL" onChange={(ev) => setPicUpload(ev.target.value)}/>
       <input type="submit" />   
     </form>

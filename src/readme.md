@@ -45,23 +45,15 @@ This application has the following components:
       b. A running list of posts which includes everything in step 2.
       c. A link which pulls up the photo.
       d. A button to delete, which reads “The Poop Fairy Stole It”
-
-  4. A PHOTO page which includes:
-      a. A “Back to List” Link
-      b. A “Back to Home” Link
-      c. a photo of a selected poop
-      d. A delete button to remove the photo/post
-            i. This auto sends you back to the List page
-  
-  5. A FEELING CHEEKY page which includes:
+ 
+  4. A FEELING CHEEKY page which includes:
       a. A “Back to Home” link
       b. A photo of a random poo
 
-  6. A MAPIT page which includes:
+  5. A ABOUT page which includes:
       a. A “Back to Home” button
-      b. A map
-      c. emoji pins on that map
-      d. clickable links on the emojis to the photo
+      b. information concerning the site
+
 
 ----------------------API INFORMATION------------------------------
 

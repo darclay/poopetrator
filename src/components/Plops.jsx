@@ -12,7 +12,6 @@ const Plops = () => {
     const getData = async () => {
       const response = await axios.get(`${API_URL}`);
       setPlopPosts(response.data.records);
-      console.log(response.data.records);
     }
     getData();
   }, []);
@@ -26,6 +25,7 @@ const Plops = () => {
         </Link>
         <h3>Plops</h3>
         {plopPosts.map((aplop) => (
+          <Link to={`/plop-photo/${aplop.id}`}>
           <h4 
           key={aplop.id}>
             Title: 
@@ -58,8 +58,12 @@ const Plops = () => {
             <br/>
             {aplop.fields.PicUpload ? <img src={aplop.fields.PicUpload} alt="dog poop"></img> : null}
           </h4>
+          </Link>
         ))}
-
+      
+      <PlopPhoto 
+      plopPosts={plopPosts}
+      />
 
       </div>
     );
