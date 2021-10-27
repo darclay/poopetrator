@@ -1,26 +1,7 @@
-import axios from "axios";
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import PlopPhoto from "./PlopPhoto";
 
-
-const API_URL = `https://api.airtable.com/v0/appAT4ne9vTP46u1M/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
-
-const Plops = () => {
-  const [ plopPosts, setPlopPosts ] = useState([]); 
-  
-  
-  useEffect(() => {
-    const getData = async () => {
-      const response = await axios.get(`${API_URL}`);
-      setPlopPosts(response.data.records);  
-      console.log(response.data.records);    
-    }
-    getData();
-  }, []);
+const Plops = ({ plopPosts }) => {
  
-
-  
     return (
       <div>
         <Link to="/">
@@ -63,9 +44,7 @@ const Plops = () => {
             {aplop.fields.PicUpload ? <img src={aplop.fields.PicUpload} alt="dog poop"></img> : null}
           </h4>
         ))}
-      <PlopPhoto 
-      plopPosts={plopPosts}
-      />
+     
        </div>
     );
 

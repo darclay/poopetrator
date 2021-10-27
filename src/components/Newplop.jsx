@@ -9,13 +9,13 @@ const Newplop = () => {
   const [ Title, setTitle ] = useState('');
   const [ Poopetrator, setPoopetrator ] = useState('');
   const [ Location, setLocation ] = useState('');
-  // const [ MapApp, setMapApp ] = useState('');
   const [ Color, setColor ] = useState('');
   const [ Size, setSize ] = useState('');
   const [ Consistency, setConsistency ] = useState('');
   const [ PicUpload, setPicUpload ] = useState('');
 
   const [ toggleFetch, setToggleFetch ] = useState(false);
+  
   
   const handleSubmit = async (ev) => {
       ev.preventDefault();
@@ -26,7 +26,6 @@ const Newplop = () => {
           Title,
           Poopetrator,
           Location,
-          // MapApp,
           Color,
           Size,
           Consistency,

@@ -4,13 +4,23 @@ import Plops from "./components/Plops.jsx";
 import About from "./components/About.jsx";
 import FeelingCheeky from "./components/FeelingCheeky.jsx";
 import PlopPhoto from "./components/PlopPhoto.jsx";
+import './App.css';
+import axios from "axios";
+import { useState } from 'react';
 
+const API_URL = `https://api.airtable.com/v0/appAT4ne9vTP46u1M/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
 
 const App = () => {
-  return (
-    
-    
-    
+  const [ plopPosts, setPlopPosts ] = useState([]); 
+  
+    const getData = async () => {
+      const response = await axios.get(`${API_URL}`);
+      setPlopPosts(response.data.records);  
+      console.log(response.data.records);    
+    }
+    getData();
+  
+  return (  
     <div>
      <h1>POOPETRATOR</h1>
      
@@ -25,7 +35,7 @@ const App = () => {
           <Link to="/newplop">
           <button id="newPlop">NEW PLOP</button>
           </Link>
-          
+
           <Link to="/plops">
           <button id="plops">PLOPS</button>
           </Link>
@@ -44,7 +54,9 @@ const App = () => {
     </Route>
 
     <Route path="/plops">
-    <Plops/>
+    <Plops
+    plopPosts={plopPosts}
+    />
     </Route>
 
     <Route path="/plop-photo/:id">
@@ -58,8 +70,6 @@ const App = () => {
     <Route path="/feeling-cheeky">
     <FeelingCheeky/>
     </Route>
-
-
     </div>
   );
 }
