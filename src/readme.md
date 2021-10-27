@@ -6,9 +6,7 @@ Title: Poopetrator
 
 Description: This app gives the user the ability to document stray dog poop in their area.  
 If the user finds a stray (unocompanied) poop, they can open the app, and upload desciptors to an API.
-The users upload is rendered and can be viewed by them or others, via the API.
-If the stray poop is no longer in the area that it is said to be, then the user can delete the post.
-The application will have a map function, which shows the user the posts via pins on a map.  
+The users upload is rendered and can be viewed by them or others, via the API.  
 
 This application uses the following tools:
   1. React Programming Language
@@ -44,7 +42,6 @@ This application has the following components:
       a. A “Back to Home” button
       b. A running list of posts which includes everything in step 2.
       c. A link which pulls up the photo.
-      d. A button to delete, which reads “The Poop Fairy Stole It”
  
   4. A FEELING CHEEKY page which includes:
       a. A “Back to Home” link
