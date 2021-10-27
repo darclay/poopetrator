@@ -15,18 +15,6 @@ const FeelingCheeky = () => {
       const results = response.data.records;
       const randIndex = Math.floor(Math.random() * results.length);
       setPlopPosts(results[randIndex]);
-      
-      
-     
-    // ---------WHEN PHOTO NOT REQUIRED------------
-      // const photoDis = plopPosts.fields.PicUpload[0].thumbnails.large.url;
-    
-      // if (photoDis) {
-      // console.log(plopPosts.fields.PicUpload[0].thumbnails.large.url);
-      // }else {
-      // console.log("no pic available");
-      // }
-    //---------------------------------------------
     }
     getData();
   },[]);
@@ -38,7 +26,8 @@ const FeelingCheeky = () => {
         <h2>BACK TO HOME</h2>
         </Link>
       <h2>Feeling Cheeky</h2>
-      {plopPosts ? <img src={plopPosts.fields.PicUpload[0].thumbnails.large.url} alt="dog poop"></img> : null}
+      <p>Want a random photo of dog poo?  Here you go!</p>
+      {plopPosts ? <img alt='' src={plopPosts.fields.PicUpload}></img> : null}
       
 
      

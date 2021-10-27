@@ -1,7 +1,7 @@
 import { Link, Route } from "react-router-dom";
 import Newplop from "./components/Newplop.jsx";
 import Plops from "./components/Plops.jsx";
-import Mapit from "./components/Mapit.jsx";
+import About from "./components/About.jsx";
 import FeelingCheeky from "./components/FeelingCheeky.jsx";
 
 const App = () => {
@@ -28,13 +28,13 @@ const App = () => {
           <button id="plops">PLOPS</button>
           </Link>
 
-          <Link to="/mapit">
-          <button id="mapit">MAPIT</button>
-          </Link>
-
           <Link to="/feeling-cheeky">
           <button id="FEELING CHEEKY">FEELING CHEEKY</button>
           </Link> 
+
+          <Link to="/about">
+          <button id="about">ABOUT</button>
+          </Link>
     </Route>
 
     <Route path="/newplop">
@@ -45,8 +45,8 @@ const App = () => {
     <Plops/>
     </Route>
 
-    <Route path="/mapit">
-    <Mapit/>
+    <Route path="/about">
+    <About/>
     </Route>
 
     <Route path="/feeling-cheeky">

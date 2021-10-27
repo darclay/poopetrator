@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Mapit = () => {
+const About = () => {
     
   
   return (
@@ -8,10 +8,10 @@ const Mapit = () => {
       <Link to="/">
         <h2>BACK TO HOME</h2>
         </Link>
-      <h2>MapIt</h2>
+      <h2>About</h2>
     </div>
   );
 
 }
 
-export default Mapit;
+export default About;
