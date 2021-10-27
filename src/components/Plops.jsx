@@ -10,11 +10,11 @@ const Plops = ({ plopPosts }) => {
         <h3>Plops</h3>
    
         {plopPosts.map((aplop, idx) => (
+          
           <h4 
           key={idx}>
-            <Link to={`./plop-photo/${aplop.id}`}>
+           <Link to={`./plop-photo/${aplop.id}`}> 
             Title: 
-            </Link>
             <br/>
             {aplop.fields.Title}
             <br/>
@@ -42,8 +42,10 @@ const Plops = ({ plopPosts }) => {
             <br/>
             {aplop.fields.Consistency} 
             <br/>
-            {aplop.fields.PicUpload ? <img src={aplop.fields.PicUpload} alt="dog poop"></img> : null}
+            {/* {aplop.fields.PicUpload ? <img src={aplop.fields.PicUpload} alt="dog poop"></img> : null} */}
+            </Link>
           </h4>
+       
         ))}
    
      

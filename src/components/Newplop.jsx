@@ -14,7 +14,7 @@ const Newplop = ({ togglePost, setTogglePost }) => {
   const [ Size, setSize ] = useState('');
   const [ Consistency, setConsistency ] = useState('');
   const [ PicUpload, setPicUpload ] = useState('');
-  const [ redirectHome, setRedirectHome ] = useState(false); 
+  const [ redirectPlops, setRedirectPlops ] = useState(false); 
   
   
   const handleSubmit = async (ev) => {
@@ -35,9 +35,9 @@ const Newplop = ({ togglePost, setTogglePost }) => {
       }
       await axios.post(API_URL,newEntry)
       setTogglePost(!togglePost);
-      setRedirectHome(true);
+      setRedirectPlops(true);
   }
-  if (redirectHome) {
+  if (redirectPlops) {
     return < Redirect to = "/Plops"/>  
   }
 

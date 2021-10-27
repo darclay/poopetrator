@@ -1,15 +1,16 @@
-// import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 
-const PlopPhoto = (props) => {
-  // const params = useParams();
-  // const plopId = plopPosts.find((plop) => plop.id === params.id);
+const PlopPhoto = ({ plopPosts }) => {
+  const params = useParams();
+  const details = plopPosts.find(pic => pic.id === params.id);
   
-
   return (
     <div>
-      <h2>Photo</h2>
-      {/* <p>{props.fields.Title}</p> */}
+      <Link to="/Plops">
+      <h2>Back to Plops</h2>
+      </Link>
+      {details.fields.PicUpload ? <img src={details.fields.PicUpload} alt="dog poop"></img> : null}
     </div>
   )
 }

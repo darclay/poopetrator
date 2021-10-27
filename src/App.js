@@ -17,8 +17,7 @@ const App = () => {
   useEffect(() => {
     const getData = async () => {
       const response = await axios.get(`${API_URL}`);
-      setPlopPosts(response.data.records);  
-      console.log(response.data.records);    
+      setPlopPosts(response.data.records);     
     }
     getData();
   }, [togglePost]);
@@ -66,7 +65,9 @@ const App = () => {
     </Route>
 
     <Route path="/plop-photo/:id">
-    <PlopPhoto/>
+    <PlopPhoto
+    plopPosts={plopPosts}
+    />
     </Route>
 
     <Route path="/about">
