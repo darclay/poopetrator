@@ -1,11 +1,12 @@
 import axios from 'axios';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
+
 
 
 const API_URL = `https://api.airtable.com/v0/appAT4ne9vTP46u1M/Table%201?api_key=${process.env.REACT_APP_API_KEY}`;
 
-const Newplop = () => {
+const Newplop = ({ togglePost, setTogglePost }) => {
   const [ Title, setTitle ] = useState('');
   const [ Poopetrator, setPoopetrator ] = useState('');
   const [ Location, setLocation ] = useState('');
@@ -13,8 +14,7 @@ const Newplop = () => {
   const [ Size, setSize ] = useState('');
   const [ Consistency, setConsistency ] = useState('');
   const [ PicUpload, setPicUpload ] = useState('');
-
-  const [ toggleFetch, setToggleFetch ] = useState(false);
+  const [ redirectHome, setRedirectHome ] = useState(false); 
   
   
   const handleSubmit = async (ev) => {
@@ -34,8 +34,13 @@ const Newplop = () => {
        }]
       }
       await axios.post(API_URL,newEntry)
-      setToggleFetch(!toggleFetch);
+      setTogglePost(!togglePost);
+      setRedirectHome(true);
   }
+  if (redirectHome) {
+    return < Redirect to = "/Plops"/>  
+  }
+
 
   return (
     

@@ -8,6 +8,7 @@ const Plops = ({ plopPosts }) => {
         <h2>BACK TO HOME</h2>
         </Link>
         <h3>Plops</h3>
+   
         {plopPosts.map((aplop, idx) => (
           <h4 
           key={idx}>
@@ -44,6 +45,7 @@ const Plops = ({ plopPosts }) => {
             {aplop.fields.PicUpload ? <img src={aplop.fields.PicUpload} alt="dog poop"></img> : null}
           </h4>
         ))}
+   
      
        </div>
     );

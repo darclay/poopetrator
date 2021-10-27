@@ -6,19 +6,22 @@ import FeelingCheeky from "./components/FeelingCheeky.jsx";
 import PlopPhoto from "./components/PlopPhoto.jsx";
 import './App.css';
 import axios from "axios";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const API_URL = `https://api.airtable.com/v0/appAT4ne9vTP46u1M/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
 
 const App = () => {
   const [ plopPosts, setPlopPosts ] = useState([]); 
+  const [ togglePost, setTogglePost ] = useState(true);
   
+  useEffect(() => {
     const getData = async () => {
       const response = await axios.get(`${API_URL}`);
       setPlopPosts(response.data.records);  
       console.log(response.data.records);    
     }
     getData();
+  }, [togglePost]);
   
   return (  
     <div>
@@ -26,7 +29,7 @@ const App = () => {
      
      <Route path="/"  exact>
       <h4>
-        Find, Pin, & Document Dog Poo in Your Neighborhood.
+        The Source for Documenting Dog Poo
         <br/>
         Do you know whose krinkle cutter caused the mess?
         <br/>
@@ -50,7 +53,10 @@ const App = () => {
     </Route>
 
     <Route path="/newplop">
-    <Newplop/>
+    <Newplop
+    togglePost={togglePost}
+    setTogglePost={setTogglePost}
+    />
     </Route>
 
     <Route path="/plops">
