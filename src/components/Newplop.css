@@ -2,7 +2,11 @@ form {
   text-align: center;
 }
 input {
-  width: 32%;
+  width: 33%;
+  height: 40px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 section {
   display: flex;
@@ -28,4 +32,16 @@ h2 {
   height: 50px;
   border: #333D29 solid 3px;
   margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    font-size: 12px;
+    width: 80%;
+    height: 60px;
+  }
 }

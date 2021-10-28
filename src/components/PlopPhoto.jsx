@@ -9,8 +9,9 @@ const PlopPhoto = ({ plopPosts }) => {
   return (
     <div>
       <Link to="/Plops">
-      <h2>Back to Plops</h2>
+      <button>BACK TO PLOPS</button>
       </Link>
+      <br/>
       {details.fields.PicUpload ? <img src={details.fields.PicUpload} alt="dog poop"></img> : null}
     </div>
   )
