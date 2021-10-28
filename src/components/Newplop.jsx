@@ -17,7 +17,6 @@ const Newplop = ({ togglePost, setTogglePost }) => {
   
   const handleSubmit = async (ev) => {
       ev.preventDefault();
-      console.log('button clicked');
       const newEntry = {
        records: [{ 
         fields: {
