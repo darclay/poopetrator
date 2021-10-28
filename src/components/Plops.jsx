@@ -5,9 +5,9 @@ const Plops = ({ plopPosts }) => {
     return (
       <div>
         <Link to="/">
-        <h2>BACK TO HOME</h2>
+        <button>HOME</button>
         </Link>
-        <h3>Plops</h3>
+        <h2>Plops</h2>
    
         {plopPosts.map((aplop, idx) => (
           

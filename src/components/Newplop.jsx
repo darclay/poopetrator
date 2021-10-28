@@ -3,8 +3,6 @@ import { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import "./Newplop.css";
 
-
-
 const API_URL = `https://api.airtable.com/v0/appAT4ne9vTP46u1M/Table%201?api_key=${process.env.REACT_APP_API_KEY}`;
 
 const Newplop = ({ togglePost, setTogglePost }) => {
@@ -16,7 +14,6 @@ const Newplop = ({ togglePost, setTogglePost }) => {
   const [ Consistency, setConsistency ] = useState('');
   const [ PicUpload, setPicUpload ] = useState('');
   const [ redirectPlops, setRedirectPlops ] = useState(false); 
-  
   
   const handleSubmit = async (ev) => {
       ev.preventDefault();
@@ -41,14 +38,11 @@ const Newplop = ({ togglePost, setTogglePost }) => {
   if (redirectPlops) {
     return < Redirect to = "/Plops"/>  
   }
-
-
-  return (
-    
+  return (  
     <div>
     <h2>PLOP IT</h2>
     <Link to="/">
-        <h3>BACK TO HOME</h3>
+        <button>HOME</button>
         </Link>
     
     <form onSubmit={handleSubmit}>

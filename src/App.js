@@ -24,15 +24,21 @@ const App = () => {
   
   return (  
     <div>
-     <h1>POOPETRATOR</h1>
+    <div id="applicationTitle"> 
+    <h3>THE</h3>
+    <h1>POOPETRATOR</h1>
+    </div>
           
      <Route path="/"  exact>
       <h4>
+        <span id="sent1">
         The Source for Documenting Dog Poo
-        <br/>
+        </span>
+        <span id="sent2">
         Do you know whose krinkle cutter caused the mess?
         <br/>
         This is the best place to name the Poopetrator.
+        </span>
       </h4>
       <div class="flexDiv">
           <Link to="/newplop">
@@ -81,6 +87,7 @@ const App = () => {
     </Route>
     
     <i class="fas fa-poo"></i>
+    <footer>2021</footer>
     </div>
   );
 }
