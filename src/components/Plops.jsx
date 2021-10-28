@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import "./Plops.css";
 
 const Plops = ({ plopPosts }) => {
  
@@ -8,47 +9,48 @@ const Plops = ({ plopPosts }) => {
         <button>HOME</button>
         </Link>
         <h2>Plops</h2>
-   
+      <div class="postSection">
         {plopPosts.map((aplop, idx) => (
-          
-          <h4 
+          <div 
           key={idx}>
-           <Link to={`./plop-photo/${aplop.id}`}> 
-            Title: 
+           <Link id="postText" to={`./plop-photo/${aplop.id}`}> 
+            <h5>Title:</h5>
             <br/>
             {aplop.fields.Title}
             <br/>
-            Date: 
+            <h5>Date:</h5> 
             <br/>
             {aplop.fields.DateTime}
             <br/>
-            Location: 
+            <h5>Location:</h5> 
             <br/>
             {aplop.fields.Location}
             <br/>
-            Poopetrator: 
+            <h5>Poopetrator:</h5> 
             <br/>
             {aplop.fields.Poopetrator}
             <br/>
-            Color: 
+            <h5>Color:</h5> 
             <br/>
             {aplop.fields.Color}            
             <br/>
-            Size: 
+            <h5>Size:</h5> 
             <br/>
             {aplop.fields.Size}
             <br/>
-            Consistency: 
+            <h5>Consistency:</h5> 
             <br/>
             {aplop.fields.Consistency} 
             <br/>
            </Link>
-          </h4>
+          </div>
        
         ))}
-   
-     
-       </div>
+      </div>
+        <Link to="/">
+          <button>HOME</button>
+        </Link>
+      </div>
     );
 
 }
