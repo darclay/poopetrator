@@ -46,17 +46,18 @@ const Newplop = ({ togglePost, setTogglePost }) => {
   return (
     
     <div>
+    <h2>PLOP IT</h2>
     <Link to="/">
-        <h2>BACK TO HOME</h2>
+        <h3>BACK TO HOME</h3>
         </Link>
-    <h4>PLOP IT</h4>
+    
     <form onSubmit={handleSubmit}>
-      
+      <section>
       <label htmlFor="title"></label>
       <input type="text" id="title" placeholder="TITLE" onChange={(ev) => setTitle(ev.target.value)}/>
 
       <label htmlFor="poopetrator"></label>
-      <input type="text" id="poopetrator" placeholder="POOPETRATOR (IF KNOWN)" onChange={(ev) => setPoopetrator(ev.target.value)}/>
+      <input type="text" id="poopetrator" placeholder="POOPETRATOR" onChange={(ev) => setPoopetrator(ev.target.value)}/>
 
       <label htmlFor="location"></label>
       <input type="text" id="location" placeholder="LOCATION" onChange={(ev) => setLocation(ev.target.value)}/>
@@ -69,12 +70,14 @@ const Newplop = ({ togglePost, setTogglePost }) => {
       
       <label htmlFor="consistency"></label>
       <input type="text" id="consistency" placeholder="CONSISTENCY" onChange={(ev) => setConsistency(ev.target.value)}/>
+      </section>
       <br/>
-      <label htmlFor="picupload">You must enter the direct link from IMGUR (...i.imgur.com...)</label><br/>
-      <input type="text" id="picupload" placeholder="PIC-POST IMGUR URL" onChange={(ev) => setPicUpload(ev.target.value)}/>
-      <input type="submit" />   
+      <label htmlFor="picupload">You must enter the direct link from IMGUR<br/>(...i.imgur.com...)</label>
+      <br/>
+      <input id="picupload" type="text" id="picupload" placeholder="LINK HERE" onChange={(ev) => setPicUpload(ev.target.value)}/>
+      <br/>
+      <input id="submit" type="submit"></input>   
     </form>
-
     </div>
     );
 }

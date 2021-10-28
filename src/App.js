@@ -25,7 +25,7 @@ const App = () => {
   return (  
     <div>
      <h1>POOPETRATOR</h1>
-     
+          
      <Route path="/"  exact>
       <h4>
         The Source for Documenting Dog Poo
@@ -34,6 +34,7 @@ const App = () => {
         <br/>
         This is the best place to name the Poopetrator.
       </h4>
+      <div class="flexDiv">
           <Link to="/newplop">
           <button id="newPlop">NEW PLOP</button>
           </Link>
@@ -49,6 +50,7 @@ const App = () => {
           <Link to="/about">
           <button id="about">ABOUT</button>
           </Link>
+      </div>
     </Route>
 
     <Route path="/newplop">
@@ -77,6 +79,8 @@ const App = () => {
     <Route path="/feeling-cheeky">
     <FeelingCheeky/>
     </Route>
+    
+    <i class="fas fa-poo"></i>
     </div>
   );
 }

@@ -1,10 +1,27 @@
 div {
   background-color: #656D4A;
+  text-align: center;
 }
 body {
   background-color: #A68A64;
 }
 h1 {
+ 
+  font-family: 'Chelsea Market', cursive;
   color: #C2C5AA;
   text-align: center;
 }
+i {
+  font-size: 70px;
+  width: 100%;
+  color: #C2C5AA;
+}
+.flexDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+button {
+  
+}
+

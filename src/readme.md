@@ -81,8 +81,9 @@ SET UP REACT      |   ----    |   ----    |  ----   |
 BUILDING API      |   HIGH    |    4HR    |   4HR   |
 FETCH API & CODE  |   HIGH    |    4HR    |   4HR   |
 PICTURE UPLOAD    |  MEDIUM   |   10HR    |   6HR   |
-MAPPING           |  MEDIUM   |   10HR    |         |  
-STYLING           |  MEDIUM   |   10HR    |         |
+MAPPING           |  MEDIUM   |   10HR    |    -    |  
+STYLING           |  MEDIUM   |   10HR    |   10HR  |
+RESEARCH          |   HIGH    |     -     |   8HR   |
 =====================================================
 
 
