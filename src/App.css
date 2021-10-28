@@ -1,6 +1,10 @@
 div {
-  background-color: lightblue;
+  background-color: #656D4A;
 }
 body {
-  background-color: green;
+  background-color: #A68A64;
+}
+h1 {
+  color: #C2C5AA;
+  text-align: center;
 }

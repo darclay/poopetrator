@@ -42,8 +42,7 @@ const Plops = ({ plopPosts }) => {
             <br/>
             {aplop.fields.Consistency} 
             <br/>
-            {/* {aplop.fields.PicUpload ? <img src={aplop.fields.PicUpload} alt="dog poop"></img> : null} */}
-            </Link>
+           </Link>
           </h4>
        
         ))}

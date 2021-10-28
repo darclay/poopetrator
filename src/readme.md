@@ -24,15 +24,15 @@ This application has the following components:
       c. a NEWPOST button (new plops) to send you to a post component/ list of poopetrators
       d. a button FEELING CHEEKY to see a random photo of a poopetrator post
       e. a button to see a MAPIT which has poopetrator emoji pins
-    
+
   2. A NEWPLOP page which includes:
       a. A “Back to Home” button
       b. Title
-      c. A poopetrator (responsible party) if known: 
+      c. A poopetrator (responsible party) if known:
       d. Date: (or pulls from the api: date/time stamp)
       e. Time: (or pulls from the api: date/time stamp)
       f. Location: geolocation or describe where you are at.
-      g. Color: dropdown 
+      g. Color: dropdown
       h. Size: dropdown
       i. Consistency: dropdown
       j. pic upload
@@ -42,7 +42,7 @@ This application has the following components:
       a. A “Back to Home” button
       b. A running list of posts which includes everything in step 2.
       c. A link which pulls up the photo.
- 
+
   4. A FEELING CHEEKY page which includes:
       a. A “Back to Home” link
       b. A photo of a random poo
@@ -61,7 +61,7 @@ API LINK: "https://airtable.com/appAT4ne9vTP46u1M/tblrqVAJPFQfTY2wT/viwxIGa1bNCI
 LINK: "https://whimsical.com/poopetrator-NXU33zWqsAxb6zUpWA78NB"
 
 -----------------MVP (MINIMUM VIABLE PRODUCT)----------------------
-  
+
   1. Uses six React Components
   2. Uses React with Router/Link functionality
   3. Uses Axios to get data.
@@ -81,7 +81,8 @@ SET UP REACT      |   ----    |   ----    |  ----   |
 BUILDING API      |   HIGH    |    4HR    |   4HR   |
 FETCH API & CODE  |   HIGH    |    4HR    |   4HR   |
 PICTURE UPLOAD    |  MEDIUM   |   10HR    |   6HR   |
-MAPPING           |  MEDIUM   |   10HR    |         |  STYLING           |  MEDIUM   |   10HR    |         |
+MAPPING           |  MEDIUM   |   10HR    |         |  
+STYLING           |  MEDIUM   |   10HR    |         |
 =====================================================
 
 
