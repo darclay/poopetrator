@@ -40,7 +40,7 @@ const App = () => {
         This is the best place to name the Poopetrator.
         </span>
       </h4>
-      <div class="flexDiv">
+      <div className="flexDiv">
           <Link to="/newplop">
           <button id="newPlop">NEW PLOP</button>
           </Link>
@@ -86,7 +86,7 @@ const App = () => {
     <FeelingCheeky/>
     </Route>
     
-    <i class="fas fa-poo"></i>
+    <i className="fas fa-poo"></i>
     <footer>2021</footer>
     </div>
   );

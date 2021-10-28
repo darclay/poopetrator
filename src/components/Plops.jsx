@@ -9,38 +9,38 @@ const Plops = ({ plopPosts }) => {
         <button>HOME</button>
         </Link>
         <h2>Plops</h2>
-      <div class="postSection">
+      <div className="postSection">
         {plopPosts.map((aplop, idx) => (
           <div 
           key={idx}>
            <Link id="postText" to={`./plop-photo/${aplop.id}`}> 
             <h5>Title:</h5>
             <br/>
-            {aplop.fields.Title}
+            <p>{aplop.fields.Title}</p>
             <br/>
             <h5>Date:</h5> 
             <br/>
-            {aplop.fields.DateTime}
+            <p>{aplop.fields.DateTime}</p>
             <br/>
             <h5>Location:</h5> 
             <br/>
-            {aplop.fields.Location}
+            <p>{aplop.fields.Location}</p>
             <br/>
             <h5>Poopetrator:</h5> 
             <br/>
-            {aplop.fields.Poopetrator}
+            <p>{aplop.fields.Poopetrator}</p>
             <br/>
             <h5>Color:</h5> 
             <br/>
-            {aplop.fields.Color}            
+            <p>{aplop.fields.Color}</p>
             <br/>
             <h5>Size:</h5> 
             <br/>
-            {aplop.fields.Size}
+            <p>{aplop.fields.Size}</p>
             <br/>
             <h5>Consistency:</h5> 
             <br/>
-            {aplop.fields.Consistency} 
+            <p>{aplop.fields.Consistency}</p>
             <br/>
            </Link>
           </div>

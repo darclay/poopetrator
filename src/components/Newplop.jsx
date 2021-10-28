@@ -68,7 +68,7 @@ const Newplop = ({ togglePost, setTogglePost }) => {
       <br/>
       <label htmlFor="picupload">You must enter the direct link from IMGUR<br/>(...i.imgur.com...)</label>
       <br/>
-      <input id="picupload" type="text" id="picupload" placeholder="LINK HERE" onChange={(ev) => setPicUpload(ev.target.value)}/>
+      <input type="text" id="picupload" placeholder="LINK HERE" onChange={(ev) => setPicUpload(ev.target.value)}/>
       <br/>
       <input id="submit" type="submit"></input>   
     </form>
