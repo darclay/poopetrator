@@ -23,7 +23,7 @@ This application has the following components:
       b. a button to see a POSTS (plops) of poopetrator posts
       c. a NEWPOST button (new plops) to send you to a post component/ list of poopetrators
       d. a button FEELING CHEEKY to see a random photo of a poopetrator post
-      e. a button to see a MAPIT which has poopetrator emoji pins
+      e. a button to see an ABOUT page, which gives some info on the theme.
 
   2. A NEWPLOP page which includes:
       a. A “Back to Home” button
@@ -49,7 +49,7 @@ This application has the following components:
 
   5. A ABOUT page which includes:
       a. A “Back to Home” button
-      b. information concerning the site
+      b. information concerning the theme of the site
 
 
 ----------------------API INFORMATION------------------------------

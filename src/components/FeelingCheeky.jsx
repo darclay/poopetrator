@@ -3,8 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from 'react';
 import "./FeelingCheeky.css";
 
-const API_KEY= "keyuIN18WVkKH2hMu"
-const API_URL = "https://api.airtable.com/v0/appAT4ne9vTP46u1M/Table%201?api_key="
+const API_URL = `https://api.airtable.com/v0/appAT4ne9vTP46u1M/Table%201?api_key=${process.env.REACT_APP_API_KEY}`
 
 
 const FeelingCheeky = () => {
@@ -13,15 +12,13 @@ const FeelingCheeky = () => {
  
     useEffect(() => {
     const getData = async () => {
-      const response = await axios.get(`${API_URL}${API_KEY}`);
+      const response = await axios.get(`${API_URL}`);
       const results = response.data.records;
       const randIndex = Math.floor(Math.random() * results.length);
       setPlopPosts(results[randIndex]);
     }
     getData();
   },[]);
-
- 
 
   return (
     <div>
