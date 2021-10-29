@@ -13,7 +13,7 @@ const About = () => {
       <p id="aboutInfo">
       Does poo upset you?
       <br/>
-      Well, your dog's poo should be important to you.  Did you know that you can tell a lot about your dog's health from their doodoo?<br/>Scotology or Coprology is the science behind looking at a doocky and inducing not only what your animal eats but the animals overall health.
+      Well, your dog's poo should be important to you.  Did you know that you can tell a lot about your dog's health from their doodoo?<br/>Scotology or Coprology is the science behind looking at a doocky and inducing not only what your animal eats but your animal's overall health.
       <br/>
 
       Click <a href="https://www.purina.co.uk/articles/dogs/health/digestion/guide-to-dog-poop">HERE</a> to see more information on your dogs poo and you.
